@@ -1,6 +1,8 @@
 # Photo Selector
 
-AI-powered photo selection tool that helps you choose the best photos from a batch using Claude's vision capabilities.
+AI-powered photo selection tool that helps you quickly cull through hundreds of photos and find the best ones.
+
+**Perfect for family vacations and events.** Import your RAW or HEIC photos straight from your camera, let AI score and group them, then export your favorites as optimized JPGs ready to share.
 
 **Your photos stay on your computer.** This is a local desktop app - photos are never uploaded to any server. Only small thumbnail images are sent to Claude's API during analysis, and your originals remain safely on your machine.
 
