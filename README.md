@@ -2,6 +2,8 @@
 
 AI-powered photo selection tool that helps you choose the best photos from a batch using Claude's vision capabilities.
 
+**Your photos stay on your computer.** This is a local desktop app - photos are never uploaded to any server. Only small thumbnail images are sent to Claude's API during analysis, and your originals remain safely on your machine.
+
 ## Features
 
 - **Smart Photo Analysis**: Claude AI scores and comments on each photo based on composition, lighting, focus, and emotional impact
@@ -9,7 +11,8 @@ AI-powered photo selection tool that helps you choose the best photos from a bat
 - **Score Filtering**: Filter photos by score range and batch-select all filtered results
 - **Custom Evaluation Criteria**: Add your own prompts to customize how photos are evaluated
 - **Export**: Export selected photos as high-quality JPGs with sequential naming
-- **Secure**: API keys stored in your OS keychain, photos never leave your machine except for AI analysis
+- **100% Local**: All photos stored on your computer - nothing uploaded to the cloud
+- **Secure**: API keys stored in your OS keychain
 
 ## Installation
 
@@ -114,12 +117,16 @@ photo-selector-electron/
 - **keytar** - Secure credential storage
 - **@anthropic-ai/sdk** - Claude API
 
-## Privacy
+## Privacy & Data
 
-- Photos are stored locally on your machine
-- Only thumbnail images are sent to Claude's API for analysis
-- API keys are stored in your operating system's secure keychain
-- No telemetry or tracking
+**Your photos never leave your computer.** This app runs entirely locally:
+
+- All original photos are stored on your local disk (in a folder you choose)
+- Photos are **not** uploaded to any cloud service or server
+- During AI analysis, only small compressed thumbnails (~400px) are sent to Claude's API
+- Your original high-resolution files stay private on your machine
+- API keys are stored in your operating system's secure keychain (macOS Keychain, Windows Credential Manager, or Linux Secret Service)
+- No telemetry, analytics, or tracking of any kind
 
 ## License
 
