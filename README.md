@@ -140,6 +140,10 @@ photo-selector-electron/
 - API keys are stored in your operating system's secure keychain (macOS Keychain, Windows Credential Manager, or Linux Secret Service)
 - No telemetry, analytics, or tracking of any kind
 
+## How It Was Built
+
+This entire application was built in a single conversation with [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant. See [CLAUDE.md](CLAUDE.md) for the full story of how AI helped design, implement, and ship this app.
+
 ## License
 
 MIT
