@@ -131,13 +131,13 @@ export class PhotoManager {
     return { duplicate: false, photo };
   }
 
-  async exportSelected(project: Project): Promise<{ exported: string[]; skipped: number }> {
+  async exportSelected(project: Project, customExportPath?: string): Promise<{ exported: string[]; skipped: number }> {
     const db = getDatabase();
     const photos = db.prepare(
       'SELECT * FROM photos WHERE project_id = ? AND selected = 1 ORDER BY score DESC, id'
     ).all(project.id) as Photo[];
 
-    const exportsPath = this.getExportsPath(project.name);
+    const exportsPath = customExportPath || this.getExportsPath(project.name);
 
     // Ensure exports directory exists
     await fs.mkdir(exportsPath, { recursive: true });

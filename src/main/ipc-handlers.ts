@@ -293,7 +293,7 @@ export function registerIpcHandlers(mainWindow: BrowserWindow): void {
     return true;
   });
 
-  ipcMain.handle(IPC_CHANNELS.PHOTOS_EXPORT, async (_, projectId: number) => {
+  ipcMain.handle(IPC_CHANNELS.PHOTOS_GET_EXPORT_PATH, async (_, projectId: number) => {
     const db = getDatabase();
     const project = db.prepare('SELECT * FROM projects WHERE id = ?').get(projectId) as Project;
 
@@ -302,12 +302,25 @@ export function registerIpcHandlers(mainWindow: BrowserWindow): void {
     }
 
     const manager = new PhotoManager(config.getStoragePath());
-    const result = await manager.exportSelected(project);
+    return manager.getExportsPath(project.name);
+  });
+
+  ipcMain.handle(IPC_CHANNELS.PHOTOS_EXPORT, async (_, { projectId, exportPath }: { projectId: number; exportPath?: string }) => {
+    const db = getDatabase();
+    const project = db.prepare('SELECT * FROM projects WHERE id = ?').get(projectId) as Project;
+
+    if (!project) {
+      throw new Error('Project not found');
+    }
+
+    const manager = new PhotoManager(config.getStoragePath());
+    const finalExportPath = exportPath || manager.getExportsPath(project.name);
+    const result = await manager.exportSelected(project, finalExportPath);
 
     return {
       count: result.exported.length,
       skipped: result.skipped,
-      exportPath: manager.getExportsPath(project.name),
+      exportPath: finalExportPath,
     };
   });
 

@@ -12,6 +12,7 @@ export const IPC_CHANNELS = {
   PHOTOS_DELETE: 'photos:delete',
   PHOTOS_UPDATE_SELECTION: 'photos:updateSelection',
   PHOTOS_EXPORT: 'photos:export',
+  PHOTOS_GET_EXPORT_PATH: 'photos:getExportPath',
   PHOTO_GET: 'photo:get',
   PHOTO_THUMBNAIL: 'photo:thumbnail',
   PHOTO_ORIGINAL: 'photo:original',
