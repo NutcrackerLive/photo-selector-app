@@ -195,7 +195,7 @@ export function registerIpcHandlers(mainWindow: BrowserWindow): void {
 
   ipcMain.handle(IPC_CHANNELS.PROJECT_UPDATE, async (_, data: { id: number; name: string; prompt?: string }) => {
     const db = getDatabase();
-    db.prepare('UPDATE projects SET name = ?, prompt = ?, updated_at = datetime('now') WHERE id = ?')
+    db.prepare(`UPDATE projects SET name = ?, prompt = ?, updated_at = datetime('now') WHERE id = ?`)
       .run(data.name, data.prompt || null, data.id);
 
     return db.prepare('SELECT * FROM projects WHERE id = ?').get(data.id) as Project;
