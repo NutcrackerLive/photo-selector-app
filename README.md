@@ -6,6 +6,8 @@ AI-powered photo selection tool that helps you quickly cull through hundreds of 
 
 **Your photos stay on your computer.** This is a local desktop app - photos are never uploaded to any server. Only small thumbnail images are sent to Claude's API during analysis, and your originals remain safely on your machine.
 
+> **Requires a Claude API key.** You'll need an [Anthropic developer account](https://console.anthropic.com/) to use the AI scoring features. Analysis costs approximately $0.01-0.02 per photo.
+
 ## Features
 
 - **Smart Photo Analysis**: Claude AI scores and comments on each photo based on composition, lighting, focus, and emotional impact
@@ -18,9 +20,9 @@ AI-powered photo selection tool that helps you quickly cull through hundreds of 
 
 ## Download
 
-**[Download for macOS (Apple Silicon)](https://github.com/harj/photo-selector-app/releases/download/v1.0.0/Photo-Selector-macOS-AppleSilicon.dmg)** - M1/M2/M3 Macs
+**[Download for macOS (Apple Silicon)](https://github.com/harj/photo-selector-app/releases/download/v1.0.0/Photo.Selector-1.0.0-arm64.dmg)** - M1/M2/M3 Macs
 
-**[Download for macOS (Intel)](https://github.com/harj/photo-selector-app/releases/download/v1.0.0/Photo-Selector-macOS-Intel.dmg)** - Older Intel Macs
+**[Download for macOS (Intel)](https://github.com/harj/photo-selector-app/releases/download/v1.0.0/Photo.Selector-1.0.0.dmg)** - Older Intel Macs
 
 > **Note:** The app is not code-signed. On first launch, right-click the app and select "Open", then click "Open" again in the dialog to bypass Gatekeeper.
 
