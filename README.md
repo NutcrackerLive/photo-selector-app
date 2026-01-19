@@ -28,8 +28,8 @@ Requirements:
 
 ```bash
 # Clone the repository
-git clone https://github.com/harj/photo-selector.git
-cd photo-selector
+git clone https://github.com/harj/photo-selector-app.git
+cd photo-selector-app
 
 # Install dependencies
 npm install
