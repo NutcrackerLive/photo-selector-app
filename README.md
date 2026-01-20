@@ -4,7 +4,7 @@ AI-powered photo selection tool that helps you quickly cull through hundreds of 
 
 **Perfect for family vacations and events.** Import your RAW or HEIC photos straight from your camera, let AI score and group them, then export your favorites as optimized JPGs ready to share.
 
-**Your photos stay on your computer.** This is a local desktop app - photos are never uploaded to any server. Only small thumbnail images are sent to Claude's API during analysis, and your originals remain safely on your machine.
+**Your originals stay on your computer.** This is a desktop app that stores all photos locally. During AI analysis, small compressed thumbnails (~400px) are sent to Claude's API for scoring - your full-resolution originals never leave your machine.
 
 > **Requires a Claude API key.** You'll need an [Anthropic developer account](https://console.anthropic.com/) to use the AI scoring features. Analysis costs approximately $0.01-0.02 per photo.
 
@@ -17,7 +17,7 @@ AI-powered photo selection tool that helps you quickly cull through hundreds of 
 - **Score Filtering**: Filter photos by score range and batch-select all filtered results
 - **Custom Evaluation Criteria**: Add your own prompts to customize how photos are evaluated
 - **Export**: Export selected photos as high-quality JPGs with sequential naming
-- **100% Local**: All photos stored on your computer - nothing uploaded to the cloud
+- **Local Storage**: All photos stored on your computer - only small thumbnails sent to Claude API for analysis
 - **Secure**: API keys stored in your OS keychain
 
 ## Download
@@ -133,14 +133,15 @@ photo-selector-electron/
 
 ## Privacy & Data
 
-**Your photos never leave your computer.** This app runs entirely locally:
+**Your original photos stay on your computer.** Here's how data is handled:
 
 - All original photos are stored on your local disk (in a folder you choose)
-- Photos are **not** uploaded to any cloud service or server
-- During AI analysis, only small compressed thumbnails (~400px) are sent to Claude's API
-- Your original high-resolution files stay private on your machine
+- During AI analysis, small compressed thumbnails (~400px) are sent to Claude's API for scoring
+- Your full-resolution originals never leave your machine
 - API keys are stored in your operating system's secure keychain (macOS Keychain, Windows Credential Manager, or Linux Secret Service)
 - No telemetry, analytics, or tracking of any kind
+
+> **Note:** This is not fully on-device AI. Thumbnails are sent to Anthropic's API for analysis. If you need completely offline photo analysis, this app is not for you.
 
 ## How It Was Built
 
