@@ -13,6 +13,9 @@ AI-powered photo selection tool that helps you quickly cull through hundreds of 
 ## Features
 
 - **Smart Photo Analysis**: Claude AI scores and comments on each photo based on composition, lighting, focus, and emotional impact
+
+![AI Analysis - detailed scoring and comments](screenshots/ai-analysis.png)
+
 - **Similarity Grouping**: Automatically groups similar photos (burst shots, duplicates) and shows only the best from each group
 - **Score Filtering**: Filter photos by score range and batch-select all filtered results
 - **Custom Evaluation Criteria**: Add your own prompts to customize how photos are evaluated
